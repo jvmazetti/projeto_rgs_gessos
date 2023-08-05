@@ -1,196 +1,95 @@
-*{
-    padding: 0;
-    margin:0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+body{
+    font-family: Roboto, sans-serif;
 }
 
-.container{
-   max-width: 1024px;
-   width: 100%;
-   margin: 0 auto;
-}
-
-header {
-    background-color: #192a56;
-    color:white;
-    font-size: 30px;
-    padding-top: 16px;
-    font-family: 'Staatliches', cursive;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    
-}
-
-header > .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 16px;
-    font-family: 'Staatliches', cursive;
-}
-
-nav{
+.navbar{
     background-color: #575fcf;
-    padding:16px 0;
-    display: none;
 }
 
-nav li{
-    list-style: none;
-    display:inline;
-    margin-right: 16px;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor:pointer;
+#cabecalho .nav .nav-link .active{
+    background-color:#e15f41;
+    color: #fff;
 }
 
-nav li a {
-    color: white;
+#cabecalho .nav .nav-link,
+.nav-brand,
+.nav-brand:hover,
+.nav-cardapio .nav-link .active:hover {
+    color:#fff;
+}
+
+.navbar-toggler{
+    background-color: #fff;
+}
+
+.section-title {
+    font-family:'Russo One', sans-serif;
+    color:black;
+    font-size: 50px;
+}
+
+h1{
+    color:black;
+}
+
+.section-title span{
+    color:#e15f41;
+}
+
+.nav-item a{
+    color:#fff;
     text-decoration: none;
 }
 
-.menu-hamburguer {
-    width: 32px;
-    cursor: pointer;
+.nav-item{
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
-.menu-hamburguer span {
-    height: 2px;
-    width: 100%;
-    background-color: white;
-    display: block;
-    margin-bottom: 4px;
-    cursor: pointer;
+#sobre-a-empresa{
+    background-color: #ffeae6;
 }
 
-#imagens-carrosel img{
-    width:100%;
-    height:400px;
+.text-colored{
+    color:#e15f41;
 }
 
-.container-flex{
-    display:flex;
+.nav-link{
+    background-color:#e15f41;
+    color:#fff;
 }
 
-#sobre img{
-    max-width: 400px;
-    margin-right: 24px;
-    height: 400px;
+.carousel-item img{
+    height:600px;
 }
 
-section{
-    padding:48px 0;
+#nossos-trabalhos{
+    background-color: #ffeae6;
 }
 
-section h2{
-    margin-bottom: 16px;
+#depoimentos p{
+    text-align: center;
 }
 
-#contato p{
-    margin-top: 25px;
+.accordion-body button a{
+    text-decoration: none;
+    background-color:#e15f41;
 }
 
-#contato img{
-    height: 30px;
-    margin-right: 5px;
-    margin-top: 30px;
+ .nav-link .active,
+#fale-conosco{
+    background-color:#fff;
+    color:black;
 }
 
-
-.lista-catalogo{
-    flex-wrap: wrap;
+.social-links{
     display: flex;
-}
-
-.lista-catalogo li{
-    list-style-type:none;
-    max-width: 30%;
-    width: 100%;
-    margin-bottom: 24px;
-}
-
-.lista-catalogo li img{
-    max-width: 100%;
-    margin-right:30px;
-}
-
-.lista-catalogo li{
-    margin:16px 0;
-}
-
-
-.depoimentos {
-    max-width: 50%;
-    margin-left: 30%;
-}
-
-.depoimentos p{
-    font-style: italic;
-    margin-bottom: 5px;
-}
-
-.perguntas {
-    max-width: 50%;
-    margin-left: 30%;
-}
-
-
-
-.primeira-pergunta p, 
-.segunda-pergunta p{
-    font-size: 20px;
-    margin-bottom: 10px;
-    margin-top: 40px;
-}
-
-.primeira-pergunta button,
-.segunda-pergunta button{
-    padding:10px 30px;
-    background-color: #119759;
-    margin-right: 10px;
-    border-radius: 10px;
-    font-family: 'Staatliches', cursive;
-    font-size: 30px;
-    color: white;
-    font-weight: bold;
-    font-style: italic;
-    cursor: pointer;
     text-decoration: none;
+    list-style: none;
 }
-
-.perguntas button:hover{
-    text-decoration: underline;
-}
-
-.segunda-pergunta{
-    display:none;
-}
-
 
 footer{
-    display:flex;
     background-color: black;
-    border-top: 2px solid #575fcf;
     color:white;
-    padding:50px 0;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    border-top:solid 2px #575fcf;
 }
-
-footer img{
-    width: 30px;
-    margin-left:10px;
-}
-
-footer ul{
-    align-items: center;
-    list-style: none;
-    margin-left: 10px;
-}
-
-
